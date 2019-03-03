@@ -1,0 +1,79 @@
+@import "./../../project/style.css";
+@import "./../button/button.css";
+
+:root {
+  --top-menu-text-color: var(--aliceblue);
+  --top-menu-active-text-color: var(--cornflowerblue);
+  --top-menu-hover-text-color: var(--aliceblue);
+  --top-menu-focus-text-color: var(--cornflowerblue);
+}
+
+.header__top-menu {
+  margin-top: 2em;
+}
+
+.top-menu__menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.3em;
+  overflow: hidden;
+}
+
+.menu-item {
+  float: left;
+}
+
+.menu-item_right {
+  float: right;
+}
+
+.top-menu__menu-list a,
+.top-menu__menu-list a:visited,
+.top-menu__menu-list a:link {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 0.75em;
+  margin: 0;
+  max-width: 100%;
+  height: 2.5em;
+  border-radius: 0.5em;
+  color: var(--top-menu-text-color);
+  font-size: 1rem;
+  text-align: right;
+  line-height: 2.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu-icon {
+  background: url("images/menu.svg") top 50% left 10%/auto no-repeat;
+}
+
+.top-menu__menu-list a:active {
+  outline: none;
+  box-shadow: 0 0 0.3em 0.1em rgba(100, 149, 237, .5);
+  color: var(--top-menu-active-text-color);
+}
+
+.top-menu__menu-list a:hover {
+  box-shadow: 0 0 0.5em 0.2em rgba(100, 149, 237, .3);
+  color: var(--top-menu-hover-text-color);
+}
+
+.top-menu__menu-list a:focus {
+  outline: none;
+  color: var(--top-menu-focus-text-color);
+}
+
+.menu-icon a:active,
+.menu-icon a:focus {
+  background: url("images/menu-active.svg") top 50% left 10%/auto no-repeat;
+}
+
+.menu-item_right .button.top-menu__button {
+  padding-left: 2.5em;
+  background: var(--button-bg-color) url("images/pluse.svg") top 50% left 10%/auto no-repeat;
+}

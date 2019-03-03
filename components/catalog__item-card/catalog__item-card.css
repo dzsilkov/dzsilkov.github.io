@@ -1,0 +1,64 @@
+@import "./../../project/style.css";
+@import "./../button/button.css";
+
+:root {
+  --sport-text-color: var(--blue);
+  --item-card-bg-color: var(--aliceblue);
+  --item-card__header-text-color: var(--midnightblue);
+}
+
+.catalog {
+  display: flex;
+  margin: 1em;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.catalog__item-card {
+  max-width: 20em;
+  box-sizing: border-box;
+  margin: 1em;
+  font-size: 1rem;
+  background-color: var(--item-card-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em 0.3em rgba(100, 149, 237, .3);
+}
+
+.item-card__logo {
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+.item-card__header {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  line-height: 1.5em;
+  text-align: center;
+  color: var(--item-card__header-text-color);
+}
+
+.item-card__discription {
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+  padding: 1em;
+  line-height: 1.5em;
+}
+
+.sport {
+  color: var(--sport-text-color);
+  font-weight: bold;
+}
+
+.catalog__item-card:hover {
+  box-shadow: 0 0 0.5em 0.3em rgba(100, 149, 237, .7);
+}
