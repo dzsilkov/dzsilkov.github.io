@@ -1,0 +1,36 @@
+@import "./../catalog__item-card/catalog__item-card.css";
+
+:root {
+  --catalog-bg-color: var(--paleturquoise);
+  --catalog__header-text-color: var(--navy);
+}
+
+.catalog {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: var(--catalog-bg-color);
+}
+
+.catalog__content {
+  margin: 0 auto;
+  max-width: 80em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.catalog__header {
+  margin: 0;
+  padding: 1em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  line-height: 1.5em;
+  text-align: center;
+  color: var(--catalog__header-text-color);
+}
+
+
+
