@@ -24,16 +24,14 @@
 
 .item-card__logo {
   display: block;
-  height: 30%;
 }
 
 img {
-  width: 100%;
-  height: 100%;
+  width: 18em;
+  height: 14em;
 }
 
 .item-card__header {
-  height: 20%;
   margin: 0;
   font-size: 1.5rem;
   padding: 0.5em;
@@ -43,7 +41,6 @@ img {
 }
 
 .item-card__discription {
-  height: 30%;
   margin: 0;
   font-size: 1rem;
   text-align: left;
@@ -52,7 +49,6 @@ img {
 }
 
 .item-card__link {
-  height: 20%;
   display: block;
   align-self: center;
 }
