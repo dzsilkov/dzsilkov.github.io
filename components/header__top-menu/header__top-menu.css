@@ -15,8 +15,7 @@ body {
 
 .header__block-menu {
   width: 100%;
-  background-color: lightsteelblue;
-  display: flex;
+  margin-top: 2em;
 }
 
 .menu-btn {
@@ -24,7 +23,8 @@ body {
   width: 3em;
   height: 3em;
   background-color: lightcyan;
-  border-radius: 50%;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
   position: relative;
 }
 
@@ -71,16 +71,12 @@ body {
 }
 
 .header__top-menu {
-  margin-top: 2em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  margin: 0;
 }
-
-
-
 
 .top-menu__menu-list {
   display: flex;
@@ -88,21 +84,41 @@ body {
   justify-content: flex-start;
   list-style: none;
   margin: 0;
-  padding: 0.5em;
+  /*padding: 0.5em;*/
+  /*background-color: cyan;*/
+  height: 2.5em;
+  line-height: 2.5em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+
 }
 
+.menu-item {
+  margin-left: -1em;
+  padding: 0;
+}
 
+.top-menu__links {
+  /*transition: 2s;*/
+  /*transform-origin: left center;*/
+  /*transform: translateY(40%);*/
+  /*opacity: 0;*/
+}
+
+/*.menu-btn:hover {*/
+  /*transform: translateY(0%);*/
+  /*opacity: 1;*/
+/*}*/
 
 .top-menu__menu-list a,
 .top-menu__menu-list a:visited,
 .top-menu__menu-list a:link {
   display: block;
   box-sizing: border-box;
-  padding: 0 0.75em;
+  padding: 0 0.75em 0 2em;
   margin: 0;
   max-width: 100%;
   height: 2.5em;
-  border-radius: 0.5em;
   color: var(--top-menu-text-color);
   font-size: 1rem;
   text-align: right;
@@ -114,10 +130,6 @@ body {
   cursor: pointer;
 }
 
-.menu-icon {
-  background: url("images/menu.svg") top 50% left 10%/auto no-repeat;
-}
-
 .top-menu__menu-list a:active {
   outline: none;
   box-shadow: 0 0 0.3em 0.1em rgba(100, 149, 237, .5);
@@ -127,6 +139,8 @@ body {
 .top-menu__menu-list a:hover {
   box-shadow: 0 0 0.5em 0.2em rgba(100, 149, 237, .3);
   color: var(--top-menu-hover-text-color);
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 .top-menu__menu-list a:focus {
@@ -134,12 +148,8 @@ body {
   color: var(--top-menu-focus-text-color);
 }
 
-.menu-icon a:active,
-.menu-icon a:focus {
-  background: url("images/menu-active.svg") top 50% left 10%/auto no-repeat;
-}
-
-.menu-item_right .button.top-menu__button {
+.header__top-menu .top-menu__button {
+  display: block;
   padding-left: 2.5em;
   background: var(--button-bg-color) url("images/pluse.svg") top 50% left 10%/auto no-repeat;
 }
