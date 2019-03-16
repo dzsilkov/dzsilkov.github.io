@@ -1,7 +1,0 @@
-@import "./../../../project/style.css";
-@import "./../../button/button.css";
-
-.search-form__button {
-  padding-left: 2em;
-  background: var(--button-bg-color) url("search-form-button__magnifier-icon.svg") top 50% left 10%/auto no-repeat;
-}
