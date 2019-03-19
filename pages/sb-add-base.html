@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>sb-add-base</title>
+  <link rel="stylesheet" href="../css/sb-add-base.css">
+</head>
+<body>
+  <header class="sb-header">
+    <nav class="top-menu">
+      <ul class="menu-main">
+        <li class="left-item"><a class=menu-main-links href="./../index.html">Главная</a></li>
+        <li class="left-item"><a class=menu-main-links href="./sb-catalog.html">Каталог</a></li>
+        <li class="left-item"><a class=menu-main-links href="./sb-articles.html">Статьи</a></li>
+        <li class="left-item"><a class=menu-main-links href="./sb-contacts.html">Контакты</a></li>
+        <li class="center-item"><a class="navbar-logo" href="./../index.html"><img src="./../images/logo.svg"></a></li>
+        <li class="right-item"><a class=menu-main-links href="./sb-add-base.html">Добавить базу</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="sb-main">
+    <section class="sb-main__add-base">
+      <h2 class="sb-main-add-base__title">Добавить базу</h2>
+      <section class="sb-main__add-base-form">
+        <form id="add-base" class="add-base__form" action="">
+          <fieldset>
+            <div class="add-base-form__layout">
+              <div class="add-base-form-layout__col">
+                <div class="add-base__input">
+                  <label for="add-base__name" class="input-field__label">Ваше имя:</label>
+                  <input id="add-base__name" class="add-base__input-field" type="text" name="name" placeholder=""
+                         autocomplete="off">
+                </div>
+                <div class="add-base__input">
+                  <label for="add-base__email" class="input-field__label">Ваш email:</label>
+                  <input id="add-base__email" class="add-base__input-field" type="email" name="mail" placeholder=""
+                         autocomplete="off">
+                </div>
+                <div class="add-base__input">
+                  <label for="add-base__phone" class="input-field__label">Телефон для связи:</label>
+                  <input id="add-base__phone" class="add-base__input-field" type="text" name="phone" placeholder=""
+                         autocomplete="off">
+                </div>
+                <a class="add-base__form-button sb-button" role="button" type="submit" tabindex="0"
+                   href="">отправить</a>
+              </div>
+              <div class="add-base-form-layout__col">
+                <div class="add-base__textarea">
+                  <label for="add-base__textarea" class="textarea-field__label">Текстовое поле</label>
+                  <textarea id="add-base__textarea" class="add-base__textarea-field" name="message" form="add-base"
+                            cols="40" rows="12">
+              </textarea>
+                </div>
+                <div class="drop-file sb-button">
+                  <label for="add-base__drop-file" class="drop-file__label">прикрепить файл</label>
+                  <input type="file" class="add-base__drop-file-button" name="drop-file" id="add-base__drop-file">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </section>
+    <section class="sb-main__service">
+      <section class="sb-main__service-item">
+        <h3>Наши услуги</h3>
+        <p>Организация спортивных сборов</p>
+        <a class="sb-button" href="">заказать звонок</a>
+      </section>
+      <section class="sb-main__service-item sb-main__service-item_theme">
+        <h3>Подбор базы</h3>
+        <p>Подберём базу индивидуально</p>
+        <a class="sb-button" href="">Оставить заявку</a>
+      </section>
+    </section>
+  </main>
+  <footer class="sb-footer">
+    <div class="sb-footer__layout">
+      <section class="sb-footer__logo"><a class="sb-footer__logo-link" href="./../index.html"><img src="./../images/logo.svg"></a>
+      </section>
+      <section class="sb-footer__form">
+        <form action="" class="sb-footer__letter-form">
+          <fieldset>
+            <legend>получать новости</legend>
+            <div class="sb-footer__letter-input">
+              <input class="sb-footer__letter-input-field" type="text" name="name" placeholder="Имя"
+                     autocomplete="off">
+            </div>
+            <div class="sb-footer__letter-input">
+              <input class="sb-footer__letter-input-field" type="email" name="e-mail" placeholder="E-mail"
+                     autocomplete="off">
+            </div>
+            <a class="sb-button" role="button" type="submit" tabindex="0" href="">подписаться</a>
+          </fieldset>
+        </form>
+      </section>
+      <section class="sb-footer__kontakt">
+        <h2 class="sb-footer-kontakt__header"><img src="./../images/footerLogo.svg" alt="footer-logo">© 2019 «ROSSPORT»
+          Базы для спортивных сборов</h2>
+        <p>+7 925 918-22-55 (Viber, WhatssApp)</p>
+        <p>+7 495 255-22-75</p>
+        <p><a href="mailto:nfo@rossport.org">nfo@rossport.org</a></p>
+        <p class="sb-footer__soc-item">
+          <a class="sb-footer__soc-link" href="https://vk.com/baseforsports" target="_blank"><img
+              src="./../images/soc-vc.svg" alt="vc-logo"></a>
+          <a class="sb-footer__soc-link" href="https://www.facebook.com/baseforsport/" target="_blank"><img
+              src="./../images/soc-facebook.svg" alt="facebook-logo"></a>
+          <a class="sb-footer__soc-link" href=https://www.instagram.com/sportbases/" target="_blank"><img
+              src="./../images/soc-instagram.svg" alt="instagram-logo"></a>
+        </p>
+      </section>
+      <!--<section class="sb-footer__address">-->
+      <!--<p>Разработано DzSilkov</p>-->
+      <!--</section>-->
+    </div>
+    <nav class="sb-footer__bottom-menu">
+      <ul class="sb-footer__list">
+        <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./../index.html">Главная</a></li>
+        <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./sb-catalog.html">Каталог</a></li>
+        <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./sb-articles.html">Статьи</a></li>
+        <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./sb-contacts.html">Контакты</a></li>
+        <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./sb-add-base.html">+ Добавить базу</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

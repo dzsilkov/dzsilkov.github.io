@@ -1,0 +1,39 @@
+@import "./catalog__item-card.css";
+@import "main.css";
+:root {
+  --catalog-bg-color: var(--paleturquoise);
+  --catalog__header-text-color: var(--navy);
+}
+
+.catalog {
+  max-width: 100%;
+  /*background: var(--catalog-bg-color);*/
+}
+
+.catalog__content {
+  max-width: 100%;
+  margin: 2em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.catalog__header {
+  margin: 0;
+  padding: 1em;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  line-height: 1.5em;
+  text-align: left;
+  color: var(--catalog__header-text-color);
+}
+
+@media (max-width: 440px) {
+  .catalog__content {
+    flex-direction: column;
+  }
+}
+
+

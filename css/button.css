@@ -1,0 +1,100 @@
+@import "./style.css";
+
+:root {
+  --button-bg-color: var(--cornflowerblue);
+  --button-border-color: var(--cornflowerblue);
+  --button-text-color: var(--aliceblue);
+  --button-focus-text-color: var(--cornflowerblue);
+  --button-focus-bg-color: var(--tomato);
+  --button-before-bg-color: var(--tomato);
+  --button-hover-text-color: var(--aliceblue);
+  --button-active-text-color: var(--cornflowerblue);
+  --button-active-bg-color: var(--tomato);
+  --button-hover-border-color: var(--cornflowerblue)
+}
+
+.sb-button,
+.sb-button:visited,
+.sb-button:link {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 0.75em;
+  margin: 0;
+  max-width: 100%;
+  height: 2.5em;
+  border-radius: 0.3em;
+  box-shadow: 0 0 0.3em 0.1em rgba(100, 149, 237, .4);
+  border: 1px solid var(--button-border-color);
+  background: var(--button-bg-color);
+  color: var(--button-text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-overflow: ellipsis;
+  line-height: 2.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .025em;
+  white-space: nowrap;
+  transform: scale(1, 1);
+  will-change: transform;
+  transition: transform 0.2s .15s ease;
+  cursor: pointer;
+}
+
+.sb-button:hover {
+  box-shadow: 0 0 0.5em 0.2em rgba(100, 149, 237, .3);
+  color: var(--button-hover-text-color);
+  border: 1px solid var(--button-hover-border-color);
+  transform: scale(1.03, 1.03);
+}
+
+.sb-button:active {
+  outline: none;
+  box-shadow: 0 0 0.3em 0.1em rgba(100, 149, 237, .5);
+  color: var(--button-active-text-color);
+  background: var(--button-active-bg-color);
+  transform: scale(1, 1);
+}
+
+.sb-button:focus {
+  outline: none;
+  color: var(--button-focus-text-color);
+  background: var(--button-focus-bg-color);
+}
+
+.sb-button:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.1em);
+  left: -100%;
+  width: 100%;
+  height: 0.1em;
+  background: var(--button-before-bg-color);
+  transition: 0.5s;
+}
+
+.sb-button:hover:before {
+  animation: animate-sb-button-hover .5s linear forwards;
+}
+
+@keyframes animate-sb-button-hover {
+  0% {
+    top: calc(50% - 0.1em);
+    left: -100%;
+    height: 0.1em;
+    z-index: 1;
+  }
+  50% {
+    top: calc(50% - 0.1em);
+    left: 0;
+    height: 0.1em;
+    z-index: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}

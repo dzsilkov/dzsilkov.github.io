@@ -1,0 +1,77 @@
+@import "./main.css";
+
+.sb-main__add-base {
+  font-size: 1rem;
+}
+
+.sb-main-add-base__title {
+  margin: 0;
+  padding: 1em;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: left;
+  color: navy;
+}
+
+.add-base-form__layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.add-base-form-layout__col {
+  margin: 1em;
+  max-width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 1.3em;
+  padding: 0.1em;
+}
+
+fieldset {
+  margin: 1em;
+  border-radius: 0.3em;
+  background: aliceblue;
+  border: none;
+}
+
+textarea {
+  color: cadetblue;
+  background: aliceblue;
+  border-radius: 0.3em;
+  outline: none;
+}
+
+.add-base__input-field {
+  width: 100%;
+  height: 2em;
+  padding: 0.5em;
+  border: 1px solid cadetblue;
+  outline: none;
+  border-radius: 0.2em;
+  background: aliceblue;
+  color: cadetblue;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.add-base__input {
+  padding: 0.1em 0 0.4em;
+}
+
+.add-base__drop-file-button {
+  display: none;
+  outline: none;
+}
+
+.drop-file__label {
+  font-size: 1em;
+}
+
+.drop-file.sb-button {
+  margin-top: 0.5em;
+}
