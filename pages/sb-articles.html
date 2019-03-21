@@ -3,116 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <title>sb-articles</title>
-  <link rel="stylesheet" href="./../css/sb-articles.css">
+  <link rel="stylesheet" href="../css/pages/sb-articles.css">
 </head>
 <body>
   <div class="sb-catalog-container">
     <header class="sb-header">
-      <nav class="top-menu">
-        <ul class="menu-main">
-          <li class="left-item"><a class=menu-main-links href="./../index.html">Главная</a></li>
-          <li class="left-item"><a class=menu-main-links href="./sb-catalog.html">Каталог</a></li>
-          <li class="left-item"><a class=menu-main-links href="./sb-articles.html">Статьи</a></li>
-          <li class="left-item"><a class=menu-main-links href="./sb-contacts.html">Контакты</a></li>
-          <li class="center-item"><a class="navbar-logo" href="./../index.html"><img src="./../images/logo.svg"></a></li>
-          <li class="right-item"><a class=menu-main-links href="./sb-add-base.html">Добавить базу</a></li>
+      <nav class="sb-header__top-menu">
+        <div class="sb-header__menu-btn"><span class="burger"></span></div>
+        <ul class="sb-header__menu-main">
+          <li class="menu-main__left-item"><a class=menu-main__links href="./../index.html"
+                                              title="перейти на главную страница">Главная</a></li>
+          <li class="menu-main__left-item"><a class=menu-main__links href="./../pages/sb-catalog.html"
+                                              title="перейти в раздел каталог">Каталог</a></li>
+          <li class="menu-main__left-item"><a class=menu-main__links href="./../pages/sb-articles.html"
+                                              title="читать статьи">Статьи</a></li>
+          <li class="menu-main__left-item"><a class=menu-main__links href="./../pages/sb-contacts.html"
+                                              title="перейти в раздел контакты">Контакты</a></li>
+          <li class="menu-main__center-item">
+            <a class="navbar-logo" href="">
+              <picture>
+                <source srcset="./../images/logo.svg" type="image/svg+xml">
+                <img src="./../images/sb-header-logo.png" alt="logo-link" title="Sport Base">
+              </picture>
+            </a>
+          </li>
+          <li class="menu-main__right-item"><a class=menu-main__links href="./../pages/sb-add-base.html"
+                                               title="Добавить базу">+ Добавить базу</a></li>
         </ul>
       </nav>
     </header>
     <main class="sb-main">
+      <h1 class="sb-main__header"><a class="navbar-logo" href="./../index.html">
+        <picture>
+          <source srcset="./../images/logo.svg" type="image/svg+xml">
+          <img src="./../images/sb-header-logo.png" alt="logo-link" title="Sport Base">
+        </picture>
+      </a>Спортивные обьекты для транировок и отдыха
+      </h1>
       <section class="sb-main__articles">
         <h2 class="sb-main-articles__header">Статьи</h2>
         <section class="sb-main__articles-card">
           <section class="article-card__image">
-            <a class="article-card__logo" href="#"><img src="./../images/catalog/novopolotsk/novopolotsk-1-logo.jpg"
-                                                        alt="novopolotsk-logo"></a>
+            <a class="article-card__logo" href="#" title="читать подробности"><img
+                src="./../images/catalog/novopolotsk/novopolotsk-1-logo.jpg"
+                alt="news-image"></a>
           </section>
           <section class="articles-card__discription">
             <h3 class="article-card__title">Спортивные центры в Беларуси</h3>
             <p>Физической культуре и спорту в Белоруссии всегда придавалось большое значение. Спортивные достижения
               белорусских спортсменов позволили всему миру...</p>
-            <a class="article-card__link sb-button" href="#">Подробнее</a>
+            <a class="article-card__link sb-button" href="#" title="читать статью полностью">Подробнее</a>
           </section>
         </section>
         <section class="sb-main__articles-card">
-          <section class="article-card__image"><a class="article-card__logo" href="#"><img
+          <section class="article-card__image"><a class="article-card__logo" href="#" title="читать подробности"><img
               src="./../images/catalog/alexandrija/alexandrija-2-logo.jpg"
-              alt="novopolotsk-logo"></a>
+              alt="news-image"></a>
           </section>
           <section class="articles-card__discription">
             <h3 class="article-card__title">Что такое спортивные базы и зачем они нужны?</h3>
             <p>Чтобы добиться результатов в любом виде спорта, нужно много правильно тренироваться, совершенствовать
               технику, выносливость и не травмироваться. ...</p>
-            <a class="article-card__link sb-button" href="#">Подробнее</a>
+            <a class="article-card__link sb-button" href="#" title="читать статью полностью">Подробнее</a>
           </section>
         </section>
         <section class="sb-main__articles-card">
-          <section class="article-card__image"><a class="article-card__logo" href="#"><img
+          <section class="article-card__image"><a class="article-card__logo" href="#" title="читать подробности"><img
               src="./../images/catalog/mogilev-gimnastic/mogilev-gimnastic-4-logo.jpg"
-              alt="novopolotsk-logo"></a>
+              alt="news-image"></a>
           </section>
           <section class="articles-card__discription">
             <h3 class="article-card__title">Спортивная гимнастика</h3>
             <p>Гибкие и пластичные женщины, мужчины, которые с легкостью крутятся на кольцах, девочки, показывающие
               чудеса ловкости, и мальчики, чуть ли не взле...</p>
-            <a class="article-card__link sb-button" href="#">Подробнее</a>
+            <a class="article-card__link sb-button" href="#" title="читать статью полностью">Подробнее</a>
           </section>
         </section>
         <section class="sb-main__articles-card">
-          <section class="article-card__image"><a class="article-card__logo" href="#"><img
+          <section class="article-card__image"><a class="article-card__logo" href="#" title="читать подробности"><img
               src="./../images/catalog/mogilev-legkaja-atletica/mogilev-legkaja-atletica-1-logo.jpg"
-              alt="novopolotsk-logo"></a>
+              alt="news-image"></a>
           </section>
           <section class="articles-card__discription">
             <h3 class="article-card__title">Спортивные сборы по легкой атлетике</h3>
             <p>Легкая атлетика является одним из самых популярных и массовых видов спорта России и мира...</p>
-            <a class="article-card__link sb-button" href="#">Подробнее</a>
+            <a class="article-card__link sb-button" href="#" title="читать статью полностью">Подробнее</a>
           </section>
         </section>
         <section class="sb-main__articles-card">
-          <section class="article-card__image"><a class="article-card__logo" href="#"><img
+          <section class="article-card__image"><a class="article-card__logo" href="#" title="читать подробности"><img
               src="./../images/catalog/globin/globin-1-logo.jpg"
-              alt="novopolotsk-logo"></a></section>
+              alt="news-image"></a></section>
           <section class="articles-card__discription">
             <h3 class="article-card__title">Центр Олимпийского Резерва</h3>
             <p>Центр обладает богатейшими традициями подготовки спортсменов самого высокого уровня, от новичка до
               победителя и призера Олимпийских игр. Но не толь...</p>
-            <a class="article-card__link sb-button" href="#">Подробнее</a>
+            <a class="article-card__link sb-button" href="#" title="читать статью полностью">Подробнее</a>
           </section>
         </section>
         <section class="sb-main__articles-card">
-          <section class="article-card__image"><a class="article-card__logo" href="#"><img
+          <section class="article-card__image"><a class="article-card__logo" href="#" title="читать подробности"><img
               src="./../images/catalog/ivacevichi/ivacevichi-11-logo.jpg"
-              alt="ivcevichi-logo"></a>
+              alt="news-image"></a>
           </section>
           <section class="articles-card__discription">
             <h3 class="article-card__title">Спортивный лагерь в Белоруссии</h3>
             <p>Подобрать место для летнего отдыха маленького спортсмена — задача довольно трудная. Малыши, которые любят
               активно проводить свободное время, будут ...</p>
-            <a class="article-card__link sb-button" href="#">Подробнее</a>
+            <a class="article-card__link sb-button" href="#" title="читать статью полностью">Подробнее</a>
           </section>
         </section>
         <section class="sb-main__articles-card">
-          <section class=article-card__image""><a class="article-card__logo" href="#"><img
+          <section class=article-card__image><a class="article-card__logo" href="#" title="читать подробности"><img
               src="./../images/catalog/pinsk/pinsk-1-logo.jpg"
-              alt="pinsk-logo"></a>
+              alt="news-image"></a>
           </section>
           <section class="articles-card__discription">
             <h3 class="article-card__title">Футбольный лагерь</h3>
             <p>Первые футбольные команды появились в Англии больше 100 лет назад, и с тех пор, данный вид спорта только
               набирает популярность. Несмотря на то, что...</p>
-            <a class="article-card__link sb-button" href="#">Подробнее</a>
+            <a class="article-card__link sb-button" href="#" title="читать статью полностью">Подробнее</a>
           </section>
         </section>
         <section class="sb-main__articles-card">
-          <section class=article-card__image""><a class="article-card__logo" href="#"><img
+          <section class=article-card__image><a class="article-card__logo" href="#" title="читать подробности"><img
               src="./../images/catalog/gorodok/gorodok-logo.jpg"
-              alt="gorodok-logo"></a></section>
+              alt="news-image"></a></section>
           <section class="articles-card__discription">
             <h3 class="article-card__title">Биатлон</h3>
             <p>С каждым годом повышенной популярностью пользуются спортивные мероприятия по биатлону. Они осуществляются
               многими отечественн...</p>
-            <a class="article-card__link sb-button" href="#">Подробнее</a>
+            <a class="article-card__link sb-button" href="#" title="читать статью полностью">Подробнее</a>
           </section>
         </section>
       </section>
@@ -120,18 +141,23 @@
         <section class="sb-main__service-item">
           <h3>Наши услуги</h3>
           <p>Организация спортивных сборов</p>
-          <a class="sb-button" href="">заказать звонок</a>
+          <a class="sb-button" href="#" title="перейти на страницу обратной связи">заказать звонок</a>
         </section>
         <section class="sb-main__service-item sb-main__service-item_theme">
           <h3>Подбор базы</h3>
           <p>Подберём базу индивидуально</p>
-          <a class="sb-button" href="">Оставить заявку</a>
+          <a class="sb-button" href="#" title="оставить заявку для подбора спортивной базы">Оставить заявку</a>
         </section>
       </section>
     </main>
     <footer class="sb-footer">
       <div class="sb-footer__layout">
-        <section class="sb-footer__logo"><a class="sb-footer__logo-link" href="./../index.html"><img src="./../images/logo.svg"></a>
+        <section class="sb-footer__logo"><a class="sb-footer__logo-link" href="./../index.html">
+          <picture>
+            <source srcset="./../images/logo.svg" type="image/svg+xml">
+            <img src="./../images/sb-header-logo.png" alt="logo-link" title="Sport Base">
+          </picture>
+        </a>
         </section>
         <section class="sb-footer__form">
           <form action="" class="sb-footer__letter-form">
@@ -145,7 +171,7 @@
                 <input class="sb-footer__letter-input-field" type="email" name="e-mail" placeholder="E-mail"
                        autocomplete="off">
               </div>
-              <a class="sb-button" role="button" type="submit" tabindex="0" href="">подписаться</a>
+              <a class="sb-button" role="button" type="submit" tabindex="0" href="#">подписаться</a>
             </fieldset>
           </form>
         </section>
@@ -157,28 +183,36 @@
           <p>+7 495 255-22-75</p>
           <p><a href="mailto:nfo@rossport.org">nfo@rossport.org</a></p>
           <p class="sb-footer__soc-item">
-            <a class="sb-footer__soc-link" href="https://vk.com/baseforsports" target="_blank"><img
+            <a class="sb-footer__soc-link" href="https://vk.com/baseforsports" target="_blank" title="vc"><img
                 src="./../images/soc-vc.svg" alt="vc-logo"></a>
-            <a class="sb-footer__soc-link" href="https://www.facebook.com/baseforsport/" target="_blank"><img
+            <a class="sb-footer__soc-link" href="https://www.facebook.com/baseforsport" target="_blank"
+               title="facebook"><img
                 src="./../images/soc-facebook.svg" alt="facebook-logo"></a>
-            <a class="sb-footer__soc-link" href=https://www.instagram.com/sportbases/" target="_blank"><img
+            <a class="sb-footer__soc-link" href="https://www.instagram.com/sportbases" target="_blank" title="instgram"><img
                 src="./../images/soc-instagram.svg" alt="instagram-logo"></a>
           </p>
         </section>
-        <!--<section class="sb-footer__address">-->
-        <!--<p>Разработано DzSilkov</p>-->
-        <!--</section>-->
+        <section class="sb-footer__address">
+          <p>DzSilkov</p>
+        </section>
       </div>
       <nav class="sb-footer__bottom-menu">
         <ul class="sb-footer__list">
           <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./../index.html">Главная</a></li>
-          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./sb-catalog.html">Каталог</a></li>
-          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="sb-articles.html">Статьи</a></li>
-          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="sb-contacts.html">Контакты</a></li>
-          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./sb-add-base.html">+ Добавить базу</a></li>
+          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./../pages/sb-catalog.html">Каталог</a>
+          </li>
+          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./../pages/sb-articles.html">Статьи</a>
+          </li>
+          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./../pages/sb-contacts.html">Контакты</a>
+          </li>
+          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./../pages/sb-add-base.html">+ Добавить
+            базу</a></li>
         </ul>
       </nav>
     </footer>
   </div>
+  <script type="text/javascript" src="./../script/jquery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./../script/jquery/header-menu.js"></script>
+  <script type="text/javascript" src="./../script/script.js"></script>
 </body>
 </html>
