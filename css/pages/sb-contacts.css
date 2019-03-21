@@ -1,6 +1,6 @@
 @import url(../style.css);
 
-.sb-main__contacts-card {
+.main__contacts-card {
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +19,7 @@
   margin: 2em;
 }
 
-.sb-main-contacts__header {
+.main-contacts__header {
   margin: 0;
   padding: 1em;
   font-family: "Franklin Gothic Medium", sans-serif;
@@ -28,22 +28,22 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-align: left;
-  color: var(--sb-main-contacts__header-text-color);
+  color: var(--main-contacts__header-text-color);
 }
 
-.sb-main__contacts-card h3 {
+.main__contacts-card h3 {
   font-family: "Franklin Gothic Medium", sans-serif;
   font-size: 2.2em;
   padding: 0.3em 0 0.6em 0;
   font-weight: bold;
-  color: var(--sb-main__contacts-card-title-color);
+  color: var(--main__contacts-card-title-color);
 }
 
-.sb-main__contacts-card p {
+.main__contacts-card p {
   font-family: 'Lato', Calibri, Arial, sans-serif;
   font-size: 1.2em;
   padding: 0.3em 0.3em;
-  color: var(--sb-main__contacts-card-content);
+  color: var(--main__contacts-card-content);
 }
 
 @media (max-width: 1115px) {
@@ -52,7 +52,7 @@
     margin: 0;
   }
 
-  .sb-header__menu-main {
+  .header__menu-main {
     padding-top: 5em;
   }
 
@@ -68,25 +68,25 @@
     position: relative;
   }
 
-  .sb-footer__layout {
+  .footer__layout {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
 
-  .sb-footer__kontakt {
+  .footer__kontakt {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
   }
 
-  .sb-main__header {
+  .main__header {
     display: none;
   }
 }
 
 @media screen and (max-width: 800px) {
 
-  .sb-footer__list {
+  .footer__list {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
@@ -94,9 +94,9 @@
 
 @media (max-width: 640px) {
 
-  .sb-header__menu-main,
-  .sb-footer__layout,
-  .sb-footer__list {
+  .header__menu-main,
+  .footer__layout,
+  .footer__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -107,7 +107,7 @@
     align-items: center;
   }
 
-  .sb-footer__list-item {
+  .footer__list-item {
     border-right: none;
   }
 }
