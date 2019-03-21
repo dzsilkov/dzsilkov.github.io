@@ -83,12 +83,13 @@
   --sb-main__contacts-card-title-color: var(--navy);
   --sb-main__contacts-card-content: var(--black);
   --sb-header-bg-color: var(--cornflowerblue);
-  --sb-header__menu-btn-bg-color: var(--navy);
+  --sb-header__menu-btn-bg-color: var(--cornflowerblue);
   --top-menu-text-color: var(--nepal);
   --top-menu__links-text-color: var(--gold);
   --burger-menu-color: var(--gold);
   --burger-menu-active-color: var(--tomato);
-  --sb-header-menu-links-hover-color: var(--cadetblue);
+  --sb-header-menu-links-hover-border-color: var(--tomato);
+  --sb-header-menu-links-hover-text-color: var(--tomato);
   --sb-header-menu-links-active-color: var(--tomato);
   --sb-header-menu-links-focus-color: var(--black);
   --sb-main__header-text-color: var(--gold);

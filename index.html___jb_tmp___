@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sport-Base-project</title>
+  <meta property="og:title" content="Спортивные Базы для тренировок и отдыха"/>
+  <meta property="og:type" content="Website"/>
+  <meta property="og:url" content="https://dzsilkov.github.io"/>
+  <meta property="og:image" content="http://rossport.org/local/templates/.default/f/logo.svg"/>
+  <meta property=“og:site_name” content=“Sport-Base”/>
+  <meta property=“og:description” content=“Каталог спортивных баз для тренировок и отдыха.”/>
+  <meta property="og:locale" content="ru_RU"/>
+  <meta property="og:locale:alternate" content="ru_KZ"/>
+  <meta property="og:locale:alternate" content="ru_BY">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/pages/sb-main.css">
+</head>
+<body>
+  <div class="sb-main-container">
+    <header class="sb-header">
+      <nav class="sb-header__top-menu">
+        <div class="sb-header__menu-btn"><span class="burger"></span></div>
+        <ul class="sb-header__menu-main">
+          <li class="menu-main__left-item"><a class=menu-main__links href="./index.html"
+                                              title="перейти на главную страница">Главная</a></li>
+          <li class="menu-main__left-item"><a class=menu-main__links href="./pages/sb-catalog.html"
+                                              title="перейти в раздел каталог">Каталог</a></li>
+          <li class="menu-main__left-item"><a class=menu-main__links href="./pages/sb-articles.html"
+                                              title="читать статьи">Статьи</a></li>
+          <li class="menu-main__left-item"><a class=menu-main__links href="./pages/sb-contacts.html"
+                                              title="перейти в раздел контакты">Контакты</a></li>
+          <li class="menu-main__center-item">
+            <a class="navbar-logo" href="">
+              <picture>
+                <source srcset="./images/logo.svg" type="image/svg+xml">
+                <img src="./images/sb-header-logo.png" alt="logo-link" title="Sport Base">
+              </picture>
+            </a>
+          </li>
+          <li class="menu-main__right-item"><a class=menu-main__links href="./pages/sb-add-base.html"
+                                               title="Добавить базу">+ Добавить базу</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="sb-main">
+      <h1 class="sb-main__header"><a class="navbar-logo" href="index.html">
+        <picture>
+          <source srcset="./images/logo.svg" type="image/svg+xml">
+          <img src="./images/sb-header-logo.png" alt="logo-link" title="Sport Base">
+        </picture>
+      </a>Спортивные обьекты для тренировок и отдыха
+      </h1>
+      <section class="sb-main__slider">
+        <div id="slides">
+          <figure class="sb-main__slide showing">
+            <img src="./images/sb-main__slider-1.jpeg" alt="slide1">
+            <figcaption>Базы для спортивных сборов</figcaption>
+          </figure>
+          <figure class="sb-main__slide">
+            <img src="./images/sb-main__slider-2.jpeg" alt="slide2">
+            <figcaption>Более 20 видов спорта</figcaption>
+          </figure>
+          <figure class="sb-main__slide">
+            <img src="./images/sb-main__slider-3.jpeg" alt="slide3">
+            <figcaption>Быстрее</figcaption>
+          </figure>
+          <figure class="sb-main__slide">
+            <img src="./images/sb-main__slider-4.jpeg" alt="slide4">
+            <figcaption>Выше</figcaption>
+          </figure>
+          <figure class="sb-main__slide">
+            <img src="./images/sb-main__slider-5.jpeg" alt="slide5">
+            <figcaption>Сильнее</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="sb-main__service">
+        <section class="sb-main__service-item">
+          <h3>Наши услуги</h3>
+          <p>Организация спортивных сборов</p>
+          <a class="sb-button" href="#" title="перейти на страницу обратной связи">заказать звонок</a>
+        </section>
+        <section class="sb-main__service-item sb-main__service-item_theme">
+          <h3>Подбор базы</h3>
+          <p>Подберём базу индивидуально</p>
+          <a class="sb-button" href="#" title="оставить заявку для подбора спортивной базы">Оставить заявку</a>
+        </section>
+      </section>
+    </main>
+    <footer class="sb-footer">
+      <div class="sb-footer__layout">
+        <section class="sb-footer__logo"><a class="sb-footer__logo-link" href="">
+          <picture>
+            <source srcset="./images/logo.svg" type="image/svg+xml">
+            <img src="./images/sb-header-logo.png" alt="logo-link" title="Sport Base">
+          </picture>
+        </a>
+        </section>
+        <section class="sb-footer__form">
+          <form action="" class="sb-footer__letter-form">
+            <fieldset>
+              <legend>получать новости</legend>
+              <div class="sb-footer__letter-input">
+                <input class="sb-footer__letter-input-field" type="text" name="name" placeholder="Имя"
+                       autocomplete="off">
+              </div>
+              <div class="sb-footer__letter-input">
+                <input class="sb-footer__letter-input-field" type="email" name="e-mail" placeholder="E-mail"
+                       autocomplete="off">
+              </div>
+              <a class="sb-button" role="button" type="submit" tabindex="0" href="#">подписаться</a>
+            </fieldset>
+          </form>
+        </section>
+        <section class="sb-footer__kontakt">
+          <h2 class="sb-footer-kontakt__header"><img src="./images/footerLogo.svg" alt="footer-logo">© 2019 «ROSSPORT»
+            Базы для спортивных сборов</h2>
+          <p>+7 925 918-22-55 (Viber, WhatssApp)</p>
+          <p>+7 495 255-22-75</p>
+          <p><a href="mailto:nfo@rossport.org">nfo@rossport.org</a></p>
+          <p class="sb-footer__soc-item">
+            <a class="sb-footer__soc-link" href="https://vk.com/baseforsports" target="_blank" title="vc"><img
+                src="./images/soc-vc.svg" alt="vc-logo"></a>
+            <a class="sb-footer__soc-link" href="https://www.facebook.com/baseforsport" target="_blank"
+               title="facebook"><img
+                src="./images/soc-facebook.svg" alt="facebook-logo"></a>
+            <a class="sb-footer__soc-link" href="https://www.instagram.com/sportbases" target="_blank" title="instgram"><img
+                src="./images/soc-instagram.svg" alt="instagram-logo"></a>
+          </p>
+        </section>
+        <section class="sb-footer__address">
+          <p>DzSilkov</p>
+        </section>
+      </div>
+      <nav class="sb-footer__bottom-menu">
+        <ul class="sb-footer__list">
+          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./index.html" title="перейти на главную страница">Главная</a></li>
+          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./pages/sb-catalog.html" title="перейти в раздел каталог">Каталог</a></li>
+          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./pages/sb-articles.html" title="читать статьи">Статьи</a></li>
+          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./pages/sb-contacts.html" title="Sport Base">Контакты</a>
+          </li>
+          <li class="sb-footer__list-item"><a class=sb-footer__list-link href="./pages/sb-add-base.html" title="Добавить базу">+ Добавить
+            базу</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+  <script type="text/javascript" src="script/jquery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="script/jquery/header-menu.js"></script>
+  <script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>
