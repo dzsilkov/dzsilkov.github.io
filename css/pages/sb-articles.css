@@ -5,7 +5,6 @@
 }
 
 .main-articles__header {
-  margin: 0;
   padding: 1em;
   font-family: "Franklin Gothic Medium", sans-serif;
   font-size: 2.5em;
@@ -102,7 +101,7 @@
     order: -1;
   }
 
-  .main__header {
+  .main-header-logo {
     display: none;
   }
 }
@@ -139,5 +138,9 @@
 
   .footer__list-item {
     border-right: none;
+  }
+
+  .main__header {
+    display: none;
   }
 }

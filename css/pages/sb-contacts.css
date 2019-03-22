@@ -11,7 +11,7 @@
   flex-flow: row wrap;
   font-size: 1rem;
   margin: 1em;
-  background: aliceblue;
+  background: var(--main-contacts-card-bg-color);
   border-radius: 0.3em;
 }
 
@@ -79,7 +79,7 @@
     order: -1;
   }
 
-  .main__header {
+  .main-header-logo {
     display: none;
   }
 }
@@ -105,6 +105,10 @@
     -ms-flex-align: center;
     -ms-grid-row-align: center;
     align-items: center;
+  }
+
+  .main__header {
+    display: none;
   }
 
   .footer__list-item {

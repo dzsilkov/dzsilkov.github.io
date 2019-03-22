@@ -8,3 +8,6 @@ $('.header__menu-btn').on('click', function (e) {
   $('.menu-main__right-item').toggleClass('menu-main__right-item_showed');
   $('header').toggleClass('header_fixed');
 });
+
+
+

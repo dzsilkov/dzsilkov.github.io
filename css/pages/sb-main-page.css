@@ -2,27 +2,17 @@
 
 .main {
   font-size: 1rem;
-  width: 100%;
 }
 
 .main__slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 #slides {
-  width: 100%;
+  max-width: 100%;
   position: relative;
   height: 100vh;
-  padding: 0;
-  margin: 0;
 }
 
 .main__slide {
@@ -52,14 +42,14 @@
 }
 
 .main__slide > figcaption {
-  color: var(--main__slide-text-color);
+  position: absolute;
+  top: 50%;
+  left: 5%;
   font-family: "Franklin Gothic Medium", sans-serif;
   font-size: 4em;
   font-weight: bold;
   letter-spacing: 0.02em;
-  position: absolute;
-  top: 50%;
-  left: 5%;
+  color: var(--main__slide-text-color);
   -webkit-animation: figcaption-animate 7s linear infinite;
   animation: figcaption-animate 7s linear infinite;
   text-align: center;
@@ -139,7 +129,7 @@
     margin: 0;
   }
 
-  .sb-header__menu-main {
+  .header__menu-main {
     padding-top: 5em;
   }
 
@@ -155,35 +145,43 @@
     position: relative;
   }
 
-  .sb-footer__layout {
+  .main__slide > figcaption {
+    font-size: 3em;
+  }
+
+  .footer__layout {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
 
-  .sb-footer__kontakt {
+  .footer__kontakt {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
   }
 
-  .main__header {
+  .main-header-logo {
     display: none;
   }
 }
 
 @media screen and (max-width: 800px) {
 
-  .sb-footer__list {
+  .footer__list {
     -ms-flex-pack: distribute;
     justify-content: space-around;
+  }
+
+  .main__service {
+    flex-direction: column;
   }
 }
 
 @media (max-width: 640px) {
 
-  .sb-header__menu-main,
-  .sb-footer__layout,
-  .sb-footer__list {
+  .header__menu-main,
+  .footer__layout,
+  .footer__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -194,7 +192,24 @@
     align-items: center;
   }
 
-  .sb-footer__list-item {
+  .main__slide > figcaption {
+    font-size: 2em;
+  }
+
+  .footer__list-item {
     border-right: none;
+  }
+
+  .main__service {
+    flex-direction: column;
+  }
+  .main__header {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .main__slide > figcaption {
+    font-size: 1.4em;
   }
 }
